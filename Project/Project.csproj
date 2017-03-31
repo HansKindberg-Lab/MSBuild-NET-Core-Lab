@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<!-- Import -->
+		<DirectoryBuildTargetsPath>$(MSBuildProjectDirectory)\Build\Build.targets</DirectoryBuildTargetsPath>
+		<ImportDirectoryBuildTargets>true</ImportDirectoryBuildTargets>
+	</PropertyGroup>
+	<PropertyGroup>
+		<AssemblyName>Project-assembly</AssemblyName>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<RootNamespace>Company</RootNamespace>
+		<TargetFramework>netcoreapp1.1</TargetFramework>
+	</PropertyGroup>
+</Project>

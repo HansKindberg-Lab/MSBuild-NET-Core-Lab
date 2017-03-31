@@ -1,0 +1,20 @@
+<Project>
+	<PropertyGroup>
+		<GlobalBuildProperty>global-build-property-value</GlobalBuildProperty>
+	</PropertyGroup>
+	<PropertyGroup>
+		<BuildDependsOn>
+			SetPackageInformation;
+			$(BuildDependsOn);
+		</BuildDependsOn>
+	</PropertyGroup>
+	<Target Name="GlobalBuildTarget">
+		<Message Importance="high" Text="GlobalBuildTarget: GlobalBuildProperty = $(GlobalBuildProperty)" />
+	</Target>
+	<Target Name="SetPackageInformation">
+		<PropertyGroup>
+			<Authors>Hans Kindberg - open source</Authors>
+			<Company>$(Authors)</Company>
+		</PropertyGroup>
+	</Target>
+</Project>

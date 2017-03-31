@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project", "Project\Project.csproj", "{DADC285D-A207-4A01-83FF-D4BB1E7E7F05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Global", ".Global", "{A6E51493-92BC-48BF-A08C-089A899E29DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{CA7545C2-0EE3-4D1A-A099-5135D0D013CB}"
+	ProjectSection(SolutionItems) = preProject
+		.Global\Build\Build.targets = .Global\Build\Build.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{221A9954-7510-447B-BD1D-99FA2F040236}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.config = NuGet.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{85615AF8-9926-448E-9833-3EDC9E5EF878}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DADC285D-A207-4A01-83FF-D4BB1E7E7F05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DADC285D-A207-4A01-83FF-D4BB1E7E7F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DADC285D-A207-4A01-83FF-D4BB1E7E7F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DADC285D-A207-4A01-83FF-D4BB1E7E7F05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA7545C2-0EE3-4D1A-A099-5135D0D013CB} = {A6E51493-92BC-48BF-A08C-089A899E29DA}
+		{221A9954-7510-447B-BD1D-99FA2F040236} = {A6E51493-92BC-48BF-A08C-089A899E29DA}
+		{85615AF8-9926-448E-9833-3EDC9E5EF878} = {A6E51493-92BC-48BF-A08C-089A899E29DA}
+	EndGlobalSection
+EndGlobal
