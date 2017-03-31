@@ -6,8 +6,16 @@
 	</PropertyGroup>
 	<PropertyGroup>
 		<AssemblyName>Project-assembly</AssemblyName>
+		<Authors></Authors>
+		<Company></Company>
+		<Description>My description...</Description>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<!--
+		<PackageId />
+		<Product />
+		-->
 		<RootNamespace>Company</RootNamespace>
 		<TargetFramework>netcoreapp1.1</TargetFramework>
+		<Version>2.0.2</Version>
 	</PropertyGroup>
 </Project>
