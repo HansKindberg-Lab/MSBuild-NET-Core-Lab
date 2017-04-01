@@ -29,9 +29,6 @@
 		<RootNamespace>DefaultNamespace</RootNamespace>
 		<Version>3.0.0-alpha</Version>
 	</PropertyGroup>
-	<ItemGroup>
-	  <Folder Include="Build\" />
-	</ItemGroup>
 	<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
 	<Import Project="Build\Build.targets" />
 </Project>
