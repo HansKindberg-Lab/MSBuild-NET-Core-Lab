@@ -1,19 +1,11 @@
-﻿<Project>
-	<Import Project="..\..\.Global\Build\Build.targets" />
-	<PropertyGroup>
-		<BuildProperty>build-property-value</BuildProperty>
-	</PropertyGroup>
+<Project>
+	<Import Project="$(SolutionDir).Global\Build\Build.targets" />
 	<PropertyGroup>
 		<BuildDependsOn>
 			$(BuildDependsOn);
 			Test;
-			GlobalBuildTarget;
-			BuildTarget;
 		</BuildDependsOn>
 	</PropertyGroup>
-	<Target Name="BuildTarget">
-		<Message Importance="high" Text="BuildTarget: BuildProperty = $(BuildProperty)" />
-	</Target>
 	<Target Name="Test">
 		<Message Importance="high" Text="- Information " />
 		<Message Importance="high" Text="   - ImportDirectoryBuildProps = $(ImportDirectoryBuildProps)" />
@@ -22,6 +14,8 @@
 		<Message Importance="high" Text="   - DirectoryBuildTargetsPath = $(DirectoryBuildTargetsPath)" />
 		<Message Importance="high" Text="   - _DirectoryBuildPropsFile = $(_DirectoryBuildPropsFile)" />
 		<Message Importance="high" Text="   - _DirectoryBuildPropsBasePath = $(_DirectoryBuildPropsBasePath)" />
+		<Message Importance="high" Text="   - _DirectoryBuildTargetsFile = $(_DirectoryBuildTargetsFile)" />
+		<Message Importance="high" Text="   - _DirectoryBuildTargetsBasePath = $(_DirectoryBuildTargetsBasePath)" />
 		<Message Importance="high" Text="   - MSBuildProjectDirectory = $(MSBuildProjectDirectory)" />
 		<Message Importance="high" Text="   - MSBuildProjectDirectory = $(MSBuildProjectDirectory)" />
 		<Message Importance="high" Text="   - SolutionDir = $(SolutionDir)" />

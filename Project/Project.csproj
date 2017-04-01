@@ -1,21 +1,37 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project>
+	<Import Project="Build\Build.props" />
+	<!-- Found the declaration below here: https://github.com/Microsoft/msbuild/issues/1493 -->
+	<Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
 	<PropertyGroup>
-		<!-- Import -->
-		<DirectoryBuildTargetsPath>$(MSBuildProjectDirectory)\Build\Build.targets</DirectoryBuildTargetsPath>
-		<ImportDirectoryBuildTargets>true</ImportDirectoryBuildTargets>
-	</PropertyGroup>
-	<PropertyGroup>
-		<AssemblyName>Project-assembly</AssemblyName>
-		<Authors></Authors>
-		<Company></Company>
-		<Description>My description...</Description>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<!--
-		<PackageId />
-		<Product />
-		-->
-		<RootNamespace>Company</RootNamespace>
 		<TargetFramework>netcoreapp1.1</TargetFramework>
-		<Version>2.0.2</Version>
 	</PropertyGroup>
+	<PropertyGroup>
+		<AssemblyName>AssemblyName</AssemblyName>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<Authors>$(Author)</Authors>
+		<Company>$(Author)</Company>
+		<Copyright></Copyright>
+		<Description>My description...</Description>
+		<FileVersion>2.0.0.5</FileVersion>
+		<!--
+		<NeutralLanguage></NeutralLanguage>
+		<PackageIconUrl></PackageIconUrl>
+		<PackageId></PackageId>
+		<PackageLicenseUrl></PackageLicenseUrl>
+		<PackageProjectUrl></PackageProjectUrl>
+		<PackageReleaseNotes></PackageReleaseNotes>
+		<PackageTags></PackageTags>
+		<Product></Product>
+		<RepositoryType></RepositoryType>
+		<RepositoryUrl></RepositoryUrl>
+		-->
+		<RootNamespace>DefaultNamespace</RootNamespace>
+		<Version>3.0.0-alpha</Version>
+	</PropertyGroup>
+	<ItemGroup>
+	  <Folder Include="Build\" />
+	</ItemGroup>
+	<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+	<Import Project="Build\Build.targets" />
 </Project>

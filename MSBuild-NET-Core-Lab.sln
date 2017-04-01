@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Global", ".Global", "{A6E5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{CA7545C2-0EE3-4D1A-A099-5135D0D013CB}"
 	ProjectSection(SolutionItems) = preProject
+		.Global\Build\Build.props = .Global\Build\Build.props
 		.Global\Build\Build.targets = .Global\Build\Build.targets
 	EndProjectSection
 EndProject
